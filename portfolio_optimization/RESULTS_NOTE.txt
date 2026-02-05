@@ -1,0 +1,29 @@
+RESULTS INTERPRETATION (Quant-style)
+Date: 2026-02-05
+
+Headline results
+- The optimized strategy underperformed the equal‑weight benchmark.
+- Sharpe ratio and returns were worse for the optimized strategy.
+- Drawdowns were larger for the optimized strategy.
+- Turnover was dramatically higher for the optimized strategy.
+
+Interpretation
+1) Underperformance is plausible
+  - Synthetic data has no true edge; equal‑weight often looks strong because it avoids estimation error.
+  - Mean return estimates are noisy; optimizers can overfit short‑window noise.
+
+2) High turnover is a red flag
+  - Frequent 10‑day rebalancing can cause weight churn.
+  - Transaction costs punish high turnover and can dominate any small alpha.
+
+3) Risk/return profile indicates instability
+  - Negative Sharpe and larger drawdowns suggest risk without adequate compensation.
+  - This is consistent with overfitting to short‑term signals.
+
+4) Regime stability signals weak robustness
+  - Outperformance across regimes was 0% in this run.
+  - That suggests the current parameterization is not stable across conditions.
+
+Bottom line
+- The system runs correctly, but this specific run does not show robust alpha.
+- This is a normal early‑stage outcome; it indicates parameters and assumptions need refinement.
