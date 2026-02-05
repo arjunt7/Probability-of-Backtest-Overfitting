@@ -28,6 +28,14 @@ portfolio_optimization/
 
 ## Quick Start
 
+### Virtual Environment (Recommended)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 ### 1. Install Dependencies
 
 ```bash
